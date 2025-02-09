@@ -1,0 +1,1 @@
+SELECT Calculate_Reward (2000, 5) FROM dual;

@@ -1,0 +1,1 @@
+SELECT Generate_Insert_Command(12) FROM dual;
