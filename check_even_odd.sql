@@ -13,3 +13,8 @@ BEGIN
 		RETURN 'EQUAL';
 	END IF;
 END Check_Even_Odd;
+
+
+SELECT Check_Even_Odd FROM dual;
+
+SELECT * FROM MYTABLE m; 

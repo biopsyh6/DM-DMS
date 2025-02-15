@@ -1,6 +1,6 @@
-CREATE OR REPLACE PROCEDURE Insert_Record(p_id NUMBER, p_val NUMBER) IS 
+CREATE OR REPLACE PROCEDURE Insert_Record(p_val NUMBER) IS 
 BEGIN 
-	INSERT INTO MYTABLE (id, val) VALUES (p_id, p_val);
+	INSERT INTO MYTABLE (val) VALUES (p_val);
 	COMMIT;
 END;
 
@@ -16,4 +16,22 @@ BEGIN
 	COMMIT;
 END;
 
+
+SELECT * FROM MYTABLE m;
+
+DECLARE
+    v_val NUMBER := 7070;
+BEGIN
+	Insert_Record(v_val);
+END;
+
+DECLARE
+    v_val NUMBER := 6969;
+BEGIN
+	Update_Record(2, v_val);
+END;
+
+BEGIN
+	Delete_Record(10000);
+END;
 
